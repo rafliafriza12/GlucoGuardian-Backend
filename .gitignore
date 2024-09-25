@@ -3,3 +3,4 @@
 .env
 .pnp.js
 .yarn/install-state.gz
+.vercel
