@@ -17,6 +17,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use("/user-glucose", userGlucoseRouter);
 
+app.get('/', (req, res) => {
+  res.send("Hello");
+})
 // Koneksi ke MongoDB
 const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
 
