@@ -23,6 +23,7 @@ async function run() {
 }
 run().catch(console.dir);
 
+
 app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({extended: false}));
