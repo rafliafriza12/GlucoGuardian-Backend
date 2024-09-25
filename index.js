@@ -30,6 +30,10 @@ async function connectDB() {
   }
 }
 
+app.get('/', (req, res) => {
+  res.send('Welcome to GlucoGuardian API');
+});
+
 // Memanggil fungsi koneksi dan memulai server
 connectDB().then(() => {
   app.listen(port, () => {
